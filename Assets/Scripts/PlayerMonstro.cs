@@ -2,10 +2,11 @@
 using System.Collections;
 
 public class PlayerMonstro : MonoBehaviour {
+    public int pessoasDevoradas;
 
 	// Use this for initialization
 	void Start () {
-	
+        pessoasDevoradas = 0;
 	}
 	
 	// Update is called once per frame
@@ -28,5 +29,10 @@ public class PlayerMonstro : MonoBehaviour {
     public void virarEsquerda()
     {
         this.transform.Rotate(new Vector3(0,-10, 0));
+    }
+
+    public void consumir(int quantidadePessoas)
+    {
+        pessoasDevoradas += quantidadePessoas;
     }
 }
