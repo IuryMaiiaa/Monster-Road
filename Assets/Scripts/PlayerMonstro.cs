@@ -36,7 +36,7 @@ public class PlayerMonstro : MonoBehaviour {
         pessoasDevoradas += quantidadePessoas;
     }
 
-    void OnCollisionEnter(Collider coll)
+    void OnCollisionEnter(Collision collision)
     {
 
     }
