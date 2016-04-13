@@ -11,7 +11,7 @@ public class PlayerMonstro : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.Translate(new Vector3(0,0,0.5f));
+        this.transform.Translate(new Vector3(0,0,0.25f));
         if(Input.GetKeyDown("left"))
         {
             virarEsquerda();
@@ -38,6 +38,10 @@ public class PlayerMonstro : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-
+        if(collision.gameObject.tag.Equals("inimigo"))
+        {
+            pessoasDevoradas += collision.gameObject.GetComponent<Inimigo>().getValorInimigo();
+            Destroy(collision.gameObject);
+        }
     }
 }
