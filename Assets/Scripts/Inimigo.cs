@@ -6,7 +6,6 @@ public class Inimigo : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        valor = 0;
 	}
 	
 	// Update is called once per frame

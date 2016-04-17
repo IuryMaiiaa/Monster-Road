@@ -6,8 +6,10 @@ public class PlayerMonstro : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        pessoasDevoradas = 0;
+        pessoasDevoradas = 1;
 	}
+
+   
 	
 	// Update is called once per frame
 	void Update () {
@@ -19,7 +21,13 @@ public class PlayerMonstro : MonoBehaviour {
         {
             virarDireita();
         }
+        AtualizarTamanhoMonstro();
 	}
+
+    public void AtualizarTamanhoMonstro()
+    {
+        this.transform.localScale = new Vector3(pessoasDevoradas, pessoasDevoradas, pessoasDevoradas);
+    }
 
     public void virarDireita()
     {
