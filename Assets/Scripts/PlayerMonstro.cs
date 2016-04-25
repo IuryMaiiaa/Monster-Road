@@ -26,7 +26,7 @@ public class PlayerMonstro : MonoBehaviour {
 
     public void AtualizarTamanhoMonstro()
     {
-        this.transform.localScale = new Vector3(pessoasDevoradas, pessoasDevoradas, pessoasDevoradas);
+        this.transform.localScale = new Vector3(pessoasDevoradas/100 + 1, pessoasDevoradas/100 + 1, pessoasDevoradas/100+1);
     }
 
     public void virarDireita()
