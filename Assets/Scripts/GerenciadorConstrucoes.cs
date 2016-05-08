@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class spawContrucao : MonoBehaviour {
-    GameObject construcao;
+public class GerenciadorConstrucoes : MonoBehaviour {
+    public GameObject[] contrucoes;
 
 	// Use this for initialization
 	void Start () {
