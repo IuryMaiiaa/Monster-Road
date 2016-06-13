@@ -11,7 +11,7 @@ public class CameraFallow : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.position = new Vector3(playerPosicao.position.x+5, playerPosicao.position.y+15,
-                                                playerPosicao.position.z-10);
+        this.transform.position = new Vector3(playerPosicao.position.x+10, playerPosicao.position.y+22,
+                                                playerPosicao.position.z-20);
 	}
 }
