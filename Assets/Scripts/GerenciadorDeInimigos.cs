@@ -21,11 +21,11 @@ public class GerenciadorDeInimigos : MonoBehaviour {
 
     public void spawInimigoTimer()
     {
-        if(tempoContagem+10 > Time.time)
+        if(Time.time> tempoContagem + 10)
         {
             if(realizarContagemInimigosVivos() < 2)
             {
-
+                spawInimgio();
             }
             tempoContagem = Time.time;
         }
@@ -57,7 +57,6 @@ public class GerenciadorDeInimigos : MonoBehaviour {
 
     public GameObject getInimigoPrefab(int lvPlayer)
     {
-        
         return inimigoNivel1;
     }
 }
